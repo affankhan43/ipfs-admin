@@ -129,7 +129,7 @@
                     <li><a href="charts.html"> <i class="fa fa-bar-chart"></i>Set Fees </a></li>
           </ul>
         </nav>
-        <!-- <div class="content-inner"> -->
+        <div class="content-inner">
           <header class="page-header">
             <div class="container-fluid">
               <h2 class="no-margin-bottom">Dashboard</h2>
