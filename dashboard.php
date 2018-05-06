@@ -114,7 +114,7 @@
         </nav>
       </header>
 
-    <!-- <div class="page-content d-flex align-items-stretch">
+    <div class="page-content d-flex align-items-stretch">
         <nav class="side-navbar">
           <div class="sidebar-header d-flex align-items-center">
             <div class="avatar"><img src="img/avatar-1.jpg" alt="..." class="img-fluid rounded-circle"></div>
@@ -129,7 +129,7 @@
                     <li><a href="charts.html"> <i class="fa fa-bar-chart"></i>Set Fees </a></li>
           </ul>
         </nav>
-        <div class="content-inner">
+        <!-- <div class="content-inner"> -->
           <header class="page-header">
             <div class="container-fluid">
               <h2 class="no-margin-bottom">Dashboard</h2>
@@ -648,7 +648,7 @@
           </footer>
         </div>
       </div>
-    </div>  -->
+    </div>
     <!-- JavaScript files-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper.js/umd/popper.min.js"> </script>
