@@ -84,7 +84,7 @@ ini_set("display_errors", 1);
                     <div class="form-group">
                       <input id="login-password" type="password" name="loginPassword" required data-msg="Please enter your password" class="input-material">
                       <label for="login-password" class="label-material">Password</label>
-                    </div><input id="login" type="submit" class="btn btn-primary">Login</input>
+                    </div><input id="login" type="submit" class="btn btn-primary" value="Submit"></input>
                     <!-- This should be submit button but I replaced it with <a> for demo purposes-->
                   </form><a href="#" class="forgot-pass">Forgot Password?</a><br><small>Do not have an account? </small><a href="register.html" class="signup">Signup</a>
                 </div>
