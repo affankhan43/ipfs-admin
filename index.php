@@ -8,9 +8,9 @@ ini_set("display_errors", 1);
       // username and password sent from form
 
       $myusername = mysqli_real_escape_string($db,$_POST['username']);
-      $mypassword = mysqli_real_escape_string($db,$_POST['password']);
+      $mypassword = md5(mysqli_real_escape_string($db,$_POST['password']));
 
-      $sql = "SELECT id FROM user_prev WHERE email = '$myusername' and password = 'md5($mypassword)'";
+      $sql = "SELECT id FROM user_prev WHERE email = '$myusername' and password = '$mypassword'";
       $result = mysqli_query($db,$sql);
       $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
       $count = mysqli_num_rows($result);
