@@ -23,7 +23,7 @@ ini_set("display_errors", 1);
 
          header("location: dashboard.php");
       }else {
-        echo "<div class="login-error">Your Login Name or Password is invalid</div>";
+        echo "Your Login Name or Password is invalid";
       }
    }
 ?>
