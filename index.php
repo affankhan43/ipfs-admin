@@ -10,11 +10,9 @@ ini_set("display_errors", 1);
       $myusername = mysqli_real_escape_string($db,$_POST['username']);
       $mypassword = mysqli_real_escape_string($db,$_POST['password']);
 
-      $sql = "SELECT id FROM admin WHERE username = '$myusername' and passcode = '$mypassword'";
+      $sql = "SELECT id FROM user_prev WHERE email = '$myusername' and password = '$mypassword'";
       $result = mysqli_query($db,$sql);
       $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-      $active = $row['active'];
-
       $count = mysqli_num_rows($result);
 
       // If result matched $myusername and $mypassword, table row must be 1 row
@@ -23,7 +21,7 @@ ini_set("display_errors", 1);
          session_register("myusername");
          $_SESSION['login_user'] = $myusername;
 
-         header("location: welcome.php");
+         header("location: dashboard.php");
       }else {
          $error = "Your Login Name or Password is invalid";
       }
@@ -78,11 +76,11 @@ ini_set("display_errors", 1);
                 <div class="content">
                   <form action="" method="post" class="form-validate">
                     <div class="form-group">
-                      <input id="login-username" type="text" name="loginUsername" required data-msg="Please enter your username" class="input-material">
+                      <input id="login-username" type="text" name="username" required data-msg="Please enter your username" class="input-material">
                       <label for="login-username" class="label-material">User Name</label>
                     </div>
                     <div class="form-group">
-                      <input id="login-password" type="password" name="loginPassword" required data-msg="Please enter your password" class="input-material">
+                      <input id="login-password" type="password" name="password" required data-msg="Please enter your password" class="input-material">
                       <label for="login-password" class="label-material">Password</label>
                     </div><input id="login" type="submit" class="btn btn-primary" value="Submit"></input>
                     <!-- This should be submit button but I replaced it with <a> for demo purposes-->
