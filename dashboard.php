@@ -30,7 +30,6 @@
   </head>
   <body>
     <div class="page">
-      <!-- Main Navbar-->
       <header class="header">
         <nav class="navbar">
           <!-- Search Box-->
@@ -114,18 +113,16 @@
           </div>
         </nav>
       </header>
-      <div class="page-content d-flex align-items-stretch">
-        <!-- Side Navbar -->
+
+    <!-- <div class="page-content d-flex align-items-stretch">
         <nav class="side-navbar">
-          <!-- Sidebar Header-->
           <div class="sidebar-header d-flex align-items-center">
             <div class="avatar"><img src="img/avatar-1.jpg" alt="..." class="img-fluid rounded-circle"></div>
             <div class="title">
               <h1 class="h4">Mark Stephen</h1>
               <p>Web Designer</p>
             </div>
-          </div>
-          <!-- Sidebar Navidation Menus--><span class="heading">Main</span>
+          </div><span class="heading">Main</span>
           <ul class="list-unstyled">
                     <li class="active"><a href="index.html"> <i class="icon-home"></i>Home </a></li>
                     <li><a href="tables.html"> <i class="icon-grid"></i>Form Builder </a></li>
@@ -133,17 +130,14 @@
           </ul>
         </nav>
         <div class="content-inner">
-          <!-- Page Header-->
           <header class="page-header">
             <div class="container-fluid">
               <h2 class="no-margin-bottom">Dashboard</h2>
             </div>
           </header>
-          <!-- Dashboard Counts Section-->
           <section class="dashboard-counts no-padding-bottom">
             <div class="container-fluid">
               <div class="row bg-white has-shadow">
-                <!-- Item -->
                 <div class="col-xl-3 col-sm-6">
                   <div class="item d-flex align-items-center">
                     <div class="icon bg-violet"><i class="icon-user"></i></div>
@@ -155,7 +149,6 @@
                     <div class="number"><strong>25</strong></div>
                   </div>
                 </div>
-                <!-- Item -->
                 <div class="col-xl-3 col-sm-6">
                   <div class="item d-flex align-items-center">
                     <div class="icon bg-red"><i class="icon-padnote"></i></div>
@@ -167,7 +160,6 @@
                     <div class="number"><strong>70</strong></div>
                   </div>
                 </div>
-                <!-- Item -->
                 <div class="col-xl-3 col-sm-6">
                   <div class="item d-flex align-items-center">
                     <div class="icon bg-green"><i class="icon-bill"></i></div>
@@ -179,7 +171,6 @@
                     <div class="number"><strong>40</strong></div>
                   </div>
                 </div>
-                <!-- Item -->
                 <div class="col-xl-3 col-sm-6">
                   <div class="item d-flex align-items-center">
                     <div class="icon bg-orange"><i class="icon-check"></i></div>
@@ -194,11 +185,9 @@
               </div>
             </div>
           </section>
-          <!-- Dashboard Header Section    -->
           <section class="dashboard-header">
             <div class="container-fluid">
               <div class="row">
-                <!-- Statistics -->
                 <div class="statistics col-lg-3 col-12">
                   <div class="statistic d-flex align-items-center bg-white has-shadow">
                     <div class="icon bg-red"><i class="fa fa-tasks"></i></div>
@@ -213,19 +202,16 @@
                     <div class="text"><strong>147</strong><br><small>Forwards</small></div>
                   </div>
                 </div>
-                <!-- Line Chart            -->
                 <div class="chart col-lg-6 col-12">
                   <div class="line-chart bg-white d-flex align-items-center justify-content-center has-shadow">
                     <canvas id="lineCahrt"></canvas>
                   </div>
                 </div>
                 <div class="chart col-lg-3 col-12">
-                  <!-- Bar Chart   -->
                   <div class="bar-chart has-shadow bg-white">
                     <div class="title"><strong class="text-violet">95%</strong><br><small>Current Server Uptime</small></div>
                     <canvas id="barChartHome"></canvas>
                   </div>
-                  <!-- Numbers-->
                   <div class="statistic d-flex align-items-center bg-white has-shadow">
                     <div class="icon bg-green"><i class="fa fa-line-chart"></i></div>
                     <div class="text"><strong>99.9%</strong><br><small>Success Rate</small></div>
@@ -234,10 +220,8 @@
               </div>
             </div>
           </section>
-          <!-- Projects Section-->
           <section class="projects no-padding-top">
             <div class="container-fluid">
-              <!-- Project-->
               <div class="project">
                 <div class="row bg-white has-shadow">
                   <div class="left-col col-lg-6 d-flex align-items-center justify-content-between">
@@ -260,7 +244,6 @@
                   </div>
                 </div>
               </div>
-              <!-- Project-->
               <div class="project">
                 <div class="row bg-white has-shadow">
                   <div class="left-col col-lg-6 d-flex align-items-center justify-content-between">
@@ -283,7 +266,6 @@
                   </div>
                 </div>
               </div>
-              <!-- Project-->
               <div class="project">
                 <div class="row bg-white has-shadow">
                   <div class="left-col col-lg-6 d-flex align-items-center justify-content-between">
@@ -306,7 +288,6 @@
                   </div>
                 </div>
               </div>
-              <!-- Project-->
               <div class="project">
                 <div class="row bg-white has-shadow">
                   <div class="left-col col-lg-6 d-flex align-items-center justify-content-between">
@@ -331,11 +312,9 @@
               </div>
             </div>
           </section>
-          <!-- Client Section-->
           <section class="client no-padding-top">
             <div class="container-fluid">
               <div class="row">
-                <!-- Work Amount  -->
                 <div class="col-lg-4">
                   <div class="work-amount card">
                     <div class="card-close">
@@ -353,7 +332,6 @@
                     </div>
                   </div>
                 </div>
-                <!-- Client Profile -->
                 <div class="col-lg-4">
                   <div class="client card">
                     <div class="card-close">
@@ -380,7 +358,6 @@
                     </div>
                   </div>
                 </div>
-                <!-- Total Overdue             -->
                 <div class="col-lg-4">
                   <div class="overdue card">
                     <div class="card-close">
@@ -401,11 +378,9 @@
               </div>
             </div>
           </section>
-          <!-- Feeds Section-->
           <section class="feeds no-padding-top">
             <div class="container-fluid">
               <div class="row">
-                <!-- Trending Articles-->
                 <div class="col-lg-6">
                   <div class="articles card">
                     <div class="card-close">
@@ -447,7 +422,6 @@
                     </div>
                   </div>
                 </div>
-                <!-- Check List -->
                 <div class="col-lg-6">
                   <div class="checklist card">
                     <div class="card-close">
@@ -490,11 +464,9 @@
               </div>
             </div>
           </section>
-          <!-- Updates Section                                                -->
           <section class="updates no-padding-top">
             <div class="container-fluid">
               <div class="row">
-                <!-- Recent Updates-->
                 <div class="col-lg-4">
                   <div class="recent-updates card">
                     <div class="card-close">
@@ -507,7 +479,6 @@
                       <h3 class="h4">Recent Updates</h3>
                     </div>
                     <div class="card-body no-padding">
-                      <!-- Item-->
                       <div class="item d-flex justify-content-between">
                         <div class="info d-flex">
                           <div class="icon"><i class="icon-rss-feed"></i></div>
@@ -518,7 +489,6 @@
                         </div>
                         <div class="date text-right"><strong>24</strong><span>May</span></div>
                       </div>
-                      <!-- Item-->
                       <div class="item d-flex justify-content-between">
                         <div class="info d-flex">
                           <div class="icon"><i class="icon-rss-feed"></i></div>
@@ -529,7 +499,6 @@
                         </div>
                         <div class="date text-right"><strong>24</strong><span>May</span></div>
                       </div>
-                      <!-- Item        -->
                       <div class="item d-flex justify-content-between">
                         <div class="info d-flex">
                           <div class="icon"><i class="icon-rss-feed"></i></div>
@@ -540,7 +509,6 @@
                         </div>
                         <div class="date text-right"><strong>24</strong><span>May</span></div>
                       </div>
-                      <!-- Item-->
                       <div class="item d-flex justify-content-between">
                         <div class="info d-flex">
                           <div class="icon"><i class="icon-rss-feed"></i></div>
@@ -551,7 +519,6 @@
                         </div>
                         <div class="date text-right"><strong>24</strong><span>May</span></div>
                       </div>
-                      <!-- Item-->
                       <div class="item d-flex justify-content-between">
                         <div class="info d-flex">
                           <div class="icon"><i class="icon-rss-feed"></i></div>
@@ -565,7 +532,6 @@
                     </div>
                   </div>
                 </div>
-                <!-- Daily Feeds -->
                 <div class="col-lg-4">
                   <div class="daily-feeds card">
                     <div class="card-close">
@@ -578,7 +544,6 @@
                       <h3 class="h4">Daily Feeds</h3>
                     </div>
                     <div class="card-body no-padding">
-                      <!-- Item-->
                       <div class="item">
                         <div class="feed d-flex justify-content-between">
                           <div class="feed-body d-flex justify-content-between"><a href="#" class="feed-profile"><img src="img/avatar-5.jpg" alt="person" class="img-fluid rounded-circle"></a>
@@ -590,7 +555,6 @@
                           <div class="date text-right"><small>5min ago</small></div>
                         </div>
                       </div>
-                      <!-- Item-->
                       <div class="item">
                         <div class="feed d-flex justify-content-between">
                           <div class="feed-body d-flex justify-content-between"><a href="#" class="feed-profile"><img src="img/avatar-2.jpg" alt="person" class="img-fluid rounded-circle"></a>
@@ -603,7 +567,6 @@
                           <div class="date text-right"><small>5min ago</small></div>
                         </div>
                       </div>
-                      <!-- Item-->
                       <div class="item clearfix">
                         <div class="feed d-flex justify-content-between">
                           <div class="feed-body d-flex justify-content-between"><a href="#" class="feed-profile"><img src="img/avatar-3.jpg" alt="person" class="img-fluid rounded-circle"></a>
@@ -620,7 +583,6 @@
                     </div>
                   </div>
                 </div>
-                <!-- Recent Activities -->
                 <div class="col-lg-4">
                   <div class="recent-activities card">
                     <div class="card-close">
@@ -675,23 +637,18 @@
               </div>
             </div>
           </section>
-          <!-- Page Footer-->
           <footer class="main-footer">
             <div class="container-fluid">
               <div class="row">
                 <div class="col-sm-6">
                   <p>Your company &copy; 2017-2019</p>
                 </div>
-                <div class="col-sm-6 text-right">
-                  <p>Design by <a href="https://bootstrapious.com/admin-templates" class="external">Bootstrapious</a></p>
-                  <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
-                </div>
               </div>
             </div>
           </footer>
         </div>
       </div>
-    </div>
+    </div>  -->
     <!-- JavaScript files-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper.js/umd/popper.min.js"> </script>
