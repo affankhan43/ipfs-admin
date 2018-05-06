@@ -135,7 +135,7 @@
               <h2 class="no-margin-bottom">Dashboard</h2>
             </div>
           </header>
-          <section class="dashboard-counts no-padding-bottom">
+          <!-- <section class="dashboard-counts no-padding-bottom">
             <div class="container-fluid">
               <div class="row bg-white has-shadow">
                 <div class="col-xl-3 col-sm-6">
@@ -636,7 +636,7 @@
                 </div>
               </div>
             </div>
-          </section>
+          </section> -->
           <footer class="main-footer">
             <div class="container-fluid">
               <div class="row">
