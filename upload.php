@@ -1,7 +1,8 @@
 <?php
-include 'config.php';
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: *");
+
+include 'config.php';
 
     if(isset($_POST['action']) && $_POST['action'] == 'saveForm'){
       $formData = preg_replace('/\s+/', '', $_POST['formdata']);
