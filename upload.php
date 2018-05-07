@@ -9,7 +9,7 @@ include 'config.php';
     }
 
     if(isset($_POST['action']) && $_POST['action'] == 'getFormData'){
-      $sql = "SELECT form_fields WHERE id = '1' LIMIT 1";
+      $sql = "SELECT form_fields FROM form_builder WHERE id = '1' LIMIT 1";
       $query = mysqli_query($db, $sql);
       $result = mysqli_fetch_array($query,MYSQLI_ASSOC);
       echo $result;
