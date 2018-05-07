@@ -19,6 +19,12 @@
     <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
     <!-- Custom stylesheet - for your changes-->
     <link rel="stylesheet" href="css/custom.css">
+
+    <link rel="stylesheet" type="text/css" href="formbuilder/css/demo.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.1/jquery.rateyo.min.css">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
     <!-- Favicon-->
     <link rel="shortcut icon" href="img/favicon.ico">
     <!-- Tweaks for older IEs--><!--[if lt IE 9]>
@@ -165,6 +171,19 @@
         </div>
       </div>
     </div>
+    <script type="text/javascript">
+      var formBuilder;
+    </script>
+    <script type="text/javascript">
+      function saveForm(){
+        console.log(formBuilder.actions.getData('xml'));
+      }
+    </script>
+    <script src="formbuilder/js/vendor.js"></script>
+    <script src="formbuilder/js/form-builder.min.js"></script>
+    <script src="formbuilder/js/form-render.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.1/jquery.rateyo.min.js"></script>
+    <script src="formbuilder/js/demo.js"></script>
     <!-- JavaScript files-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper.js/umd/popper.min.js"> </script>
