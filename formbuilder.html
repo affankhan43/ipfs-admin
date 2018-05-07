@@ -45,7 +45,7 @@
   </script>
   <script type="text/javascript">
     function saveForm(){
-      var formData = formBuilder.actions.getData('xml');
+      var formData = formBuilder.actions.getData('json');
       $.post('upload.php',{'action' : 'saveForm', 'formdata' : formData} , function(msg) {
           console.log(msg);
       });
