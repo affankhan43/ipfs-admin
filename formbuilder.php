@@ -1,31 +1,7 @@
 <?php
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
-   include("config.php");
-   session_start();
-
-   if($_SERVER["REQUEST_METHOD"] == "POST") {
-      // username and password sent from form
-
-      $myusername = mysqli_real_escape_string($db,$_POST['username']);
-      $mypassword = md5(mysqli_real_escape_string($db,$_POST['password']));
-
-      $sql = "SELECT id FROM user_prev WHERE email = '$myusername' and password = '$mypassword'";
-      $result = mysqli_query($db,$sql);
-      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-      $count = mysqli_num_rows($result);
-
-      // If result matched $myusername and $mypassword, table row must be 1 row
-
-      if($count == 1) {
-         // session_register("myusername");
-         $_SESSION['login_user'] = $myusername;
-
-         header("location: dashboard.php");
-      }else {
-        echo "Your Login Name or Password is invalid";
-      }
-   }
+    include('session.php');
 ?>
   <link rel="stylesheet" type="text/css" href="formbuilder/css/demo.css">
   <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -74,7 +50,10 @@ ini_set("display_errors", 1);
   </script>
   <script type="text/javascript">
     function saveForm(){
-      console.log(formBuilder.actions.getData('xml'));
+      var formData = formBuilder.actions.getData('xml');
+      $.post('upload.php',{'action' : 'saveForm', 'formdata' : formData} , function(msg) {
+          console.log(msg);
+      });
     }
   </script>
   <script src="formbuilder/js/vendor.js"></script>
