@@ -147,7 +147,7 @@
             <div class="container-fluid">
               <div class="row">
 
-                <iframe src="formbuilder.html" style="width: 100%; height: 100%;"></iframe>
+                <iframe src="formbuilder.html" style="width: 100%; height: auto;"></iframe>
 
               </div>
             </div>
