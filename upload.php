@@ -3,7 +3,7 @@
 // if (isset($_POST['action']) && $_POST['action'] == 'saveForm'){\
 //
 //   $formdata = $_POST['formdata'];
-    $formData = $_POST['formData'];
+    $formData = preg_replace('/\s+/', '', $_POST['formData']);
 
    echo $formData;
 
