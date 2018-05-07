@@ -12,5 +12,5 @@ include 'config.php';
       $sql = "SELECT form_fields FROM form_builder WHERE id = '1' LIMIT 1";
       $query = mysqli_query($db, $sql);
       $result = mysqli_fetch_array($query,MYSQLI_ASSOC);
-      echo $result;
+      echo $result['form_fields'];
     }
