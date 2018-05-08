@@ -133,14 +133,14 @@
           <!-- Page Header-->
           <header class="page-header">
             <div class="container-fluid">
-              <h2 class="no-margin-bottom">Tables</h2>
+              <h2 class="no-margin-bottom">Form Builder</h2>
             </div>
           </header>
           <!-- Breadcrumb-->
           <div class="breadcrumb-holder container-fluid">
             <ul class="breadcrumb">
               <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-              <li class="breadcrumb-item active">Tables            </li>
+              <li class="breadcrumb-item active">Form Builder            </li>
             </ul>
           </div>
           <section class="tables">
