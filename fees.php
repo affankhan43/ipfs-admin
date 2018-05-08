@@ -124,9 +124,9 @@
             </div>
           </div><span class="heading">Main</span>
           <ul class="list-unstyled">
-                    <li class="active"><a href="index.html"> <i class="icon-home"></i>Home </a></li>
-                    <li><a href="tables.php"> <i class="icon-grid"></i>Form Builder </a></li>
-                    <li><a href="charts.html"> <i class="fa fa-bar-chart"></i>Set Fees </a></li>
+            <li ><a href="dashboard.php"> <i class="icon-home"></i>Home </a></li>
+            <li class="active"><a href="form.php"> <i class="icon-grid"></i>Form Builder </a></li>
+            <li><a href="fees.php"> <i class="fa fa-bar-chart"></i>Set Fees </a></li>
           </ul>
         </nav>
         <div class="content-inner">
@@ -141,7 +141,7 @@
                 <!-- Basic Form-->
                 <div class="col-lg-6">
                   <div class="card">
-                  
+
                     <div class="card-header d-flex align-items-center">
                       <h3 class="h4">Bitcoin Fee</h3>
                     </div>
