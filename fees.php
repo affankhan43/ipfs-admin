@@ -132,7 +132,7 @@
         <div class="content-inner">
           <header class="page-header">
             <div class="container-fluid">
-              <h2 class="no-margin-bottom">Dashboard</h2>
+              <h2 class="no-margin-bottom">See Fees</h2>
             </div>
           </header>
           <section class="forms">
