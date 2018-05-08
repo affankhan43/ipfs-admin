@@ -125,8 +125,8 @@
           </div><span class="heading">Main</span>
           <ul class="list-unstyled">
             <li ><a href="dashboard.php"> <i class="icon-home"></i>Home </a></li>
-            <li class="active"><a href="form.php"> <i class="icon-grid"></i>Form Builder </a></li>
-            <li><a href="fees.php"> <i class="fa fa-bar-chart"></i>Set Fees </a></li>
+            <li><a href="form.php"> <i class="icon-grid"></i>Form Builder </a></li>
+            <li class="active"><a href="fees.php"> <i class="fa fa-bar-chart"></i>Set Fees </a></li>
           </ul>
         </nav>
         <div class="content-inner">
