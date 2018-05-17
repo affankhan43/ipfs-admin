@@ -19,7 +19,7 @@ include 'config.php';
     }
 
     if(isset($_POST['action']) && $_POST['action'] == 'changeFee'){
-      $newFee = $_POST['new_fee'];
+      $newFee = $_POST['new_fee']*100000000;
       $sql = "UPDATE message_fees SET fees = '$newFee' WHERE id = '1' LIMIT 1";
       $query = mysqli_query($db, $sql);
       $result = mysqli_fetch_array($query,MYSQLI_ASSOC);
