@@ -146,15 +146,13 @@
                       <h3 class="h4">Bitcoin Fee</h3>
                     </div>
                     <div class="card-body">
-                      <form>
                         <div class="form-group">
                           <label class="form-control-label">Fees</label>
                           <input id="bitcoinFee" type="text" placeholder="Fees" class="form-control">
                         </div>
                         <div class="form-group">
-                          <input type="submit" value="Submit" class="btn btn-primary">
+                          <button onclick="saveFee()" type="submit" value="Submit" class="btn btn-primary">Submit</button>
                         </div>
-                      </form>
                     </div>
                   </div>
                 </div>
