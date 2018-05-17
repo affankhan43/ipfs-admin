@@ -149,7 +149,7 @@
                       <form>
                         <div class="form-group">
                           <label class="form-control-label">Fees</label>
-                          <input type="text" placeholder="Fees" class="form-control">
+                          <input id="bitcoinFee" type="text" placeholder="Fees" class="form-control">
                         </div>
                         <div class="form-group">
                           <input type="submit" value="Submit" class="btn btn-primary">
@@ -183,5 +183,15 @@
     <script src="js/charts-home.js"></script>
     <!-- Main File-->
     <script src="js/front.js"></script>
+    <script type="text/javascript">
+    function saveFee(){
+      var newFee = $("#bitcoinFee").val()
+      $.post('upload.php',{'action' : 'changeFee', 'new_fee' : newFee} , function(msg) {
+          if (msg == 'success'){
+            alert("Fee Saved");
+          }
+      });
+    }
+    </script>
   </body>
 </html>
