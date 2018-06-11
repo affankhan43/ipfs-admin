@@ -7,7 +7,7 @@ include 'config.php';
     if(isset($_POST['action']) && $_POST['action'] == 'saveForm'){
       $formData = $_POST['formdata'];
       $formData1 = json_decode($formData, true);
-      $formData1 = array("type"=>"text","subtype"=>"email","required"=>true,"label"=>"Email","placeholder"=>"Email For Notification","name"=>"notify_email_129","className"=>"green form-control");
+      $formData1[] = array("type"=>"text","subtype"=>"email","required"=>true,"label"=>"Email","placeholder"=>"Email For Notification","name"=>"notify_email_129","className"=>"green form-control");
       //$formData1[] = array("type"=>"radio-group","required"=>true,"label"=>"Type","name"=>"app-type-126","values"=>array(array("label"=>"Public","value"=>"public","selected"=>true),array("label"=>"Private","value"=>"private")));
       $formData = json_encode($formData1);
       $sql = "UPDATE form_builder SET form_fields = '$formData' WHERE id = '1' ";
